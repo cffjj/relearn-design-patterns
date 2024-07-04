@@ -4,27 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式：1.工厂方法">
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-00/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-00/src/main/java/org/itstack/demo/design/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-00/src/main/java/org/itstack/demo/design/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-00/src/main/java/org/itstack/demo/design/cuisine/impl/CacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-00/src/main/java/org/itstack/demo/design/matter/EGM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-00/src/main/java/org/itstack/demo/design/matter/IIR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-01/src/main/java/org/itstack/demo/design/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-01/src/main/java/org/itstack/demo/design/cuisine/impl/CacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-01/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/factory/ICacheAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/factory/JDKInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/factory/JDKProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/factory/impl/EGMCacheAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/factory/impl/IIRCacheAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/impl/CacheServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/main/java/org/itstack/demo/desgin/util/ClassLoaderUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-2-02/src/test/java/org/itstack/demo/desgin/test/ApiTest.java" afterDir="false" />
+    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式：1.抽象工厂模式">
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/agent/MapperFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/agent/RegisterBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/agent/Select.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/IMyUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/agent/MyMapperFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/agent/MyRegisterBeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/agent/Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/resources/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -38,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -54,32 +47,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ApiTest.test_CacheService (1).executor": "Debug",
-    "JUnit.ApiTest.test_CacheService.executor": "Run",
-    "JUnit.ApiTest.test_awardToUser.executor": "Run",
-    "JUnit.ApiTest.test_commodity.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "aspect.path.notification.shown": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "E:/workspace-java/relearn-design-patterns/itstack-demo-design-1-02/src/main/java/org/itstack/demo/design",
-    "last_opened_file_path": "E:/workspace-java/relearn-design-patterns/itstack-demo-design-2-00/src/main/java/org/itstack/demo/design/matter",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ApiTest.test_CacheService (1).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ApiTest.test_CacheService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiTest.test_IMyUserDao.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiTest.test_IUserDao.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ApiTest.test_awardToUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiTest.test_commodity.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/workspace-java/relearn-design-patterns/itstack-demo-design-1-02/src/main/java/org/itstack/demo/design&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/workspace-java/netty/itstack-demo-netty-xfg/itstack-demo-netty&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3632184&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace-java\relearn-design-patterns\itstack-demo-design-2-00\src\main\java\org\itstack\demo\design\matter" />
@@ -92,7 +87,7 @@
       <recent name="org.itstack.demo.design.goods" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_CacheService (1)">
+  <component name="RunManager" selected="JUnit.ApiTest.test_IMyUserDao">
     <configuration name="ApiTest.test_CacheService (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="itstack-demo-design-2-02" />
       <extension name="coverage">
@@ -125,17 +120,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_awardToUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itstack-demo-design-1-01" />
+    <configuration name="ApiTest.test_IMyUserDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-12-00" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.itstack.demo.test.*" />
+          <option name="PATTERN" value="org.itstack.demo.design.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.itstack.demo.test" />
-      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_awardToUser" />
+      <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
+      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_IMyUserDao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_IUserDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-12-00" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstack.demo.design.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
+      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_IUserDao" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,10 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_IMyUserDao" />
+        <item itemvalue="JUnit.ApiTest.test_IUserDao" />
         <item itemvalue="JUnit.ApiTest.test_CacheService (1)" />
         <item itemvalue="JUnit.ApiTest.test_CacheService" />
         <item itemvalue="JUnit.ApiTest.test_commodity" />
-        <item itemvalue="JUnit.ApiTest.test_awardToUser" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +194,10 @@
       <option name="presentableId" value="Default" />
       <updated>1719457055038</updated>
       <workItem from="1719457056118" duration="8599000" />
-      <workItem from="1719542224428" duration="11216000" />
+      <workItem from="1719542224428" duration="11253000" />
+      <workItem from="1719802092941" duration="15304000" />
+      <workItem from="1719975987749" duration="4000" />
+      <workItem from="1720084263877" duration="844000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式：1.工厂方法">
       <option name="closed" value="true" />
@@ -192,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719471477600</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="设计模式：1.抽象工厂模式">
+      <option name="closed" value="true" />
+      <created>1719559378764</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719559378764</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,17 +223,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="设计模式：1.工厂方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式：1.工厂方法" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/itstack-demo-design-2-02/src/test/java/org/itstack/demo/desgin/test/ApiTest.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="设计模式：1.抽象工厂模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计模式：1.抽象工厂模式" />
   </component>
 </project>
