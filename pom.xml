@@ -18,6 +18,12 @@
         <module>itstack-demo-design-2-02</module>
         <module>itstack-demo-design-12-00</module>
         <module>itstack-demo-design-6-00</module>
+        <module>itstack-demo-design-6-01</module>
+        <module>itstack-demo-design-6-02</module>
+        <module>itstack-demo-design-18-00</module>
+        <module>itstack-demo-design-18-01</module>
+        <module>itstack-demo-design-18-02</module>
+        <module>itstack-demo-design-5-00</module>
     </modules>
 
     <properties>

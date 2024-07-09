@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>org.itstack.demo</groupId>
-    <artifactId>itstack-demo-design-6-00</artifactId>
-
+    <artifactId>itstack-demo-design-5-00</artifactId>
+    <description>单例模式 Singleton</description>
 
 </project>

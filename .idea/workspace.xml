@@ -4,21 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式：1.抽象工厂模式">
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/agent/MapperFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/agent/RegisterBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/agent/Select.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/IMyUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/agent/MyMapperFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/agent/MyRegisterBeanFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/java/org/itstack/demo/design/fj/agent/Update.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/main/resources/spring-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-12-00/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/pom.xml" afterDir="false" />
+    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式：自实现抽象工厂模式">
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-00/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-00/src/main/java/org/itstack/demo/design/MinibusTargetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-01/src/main/java/org/itstack/demo/design/LotteryResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-01/src/main/java/org/itstack/demo/design/LotteryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-01/src/main/java/org/itstack/demo/design/LotteryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-01/src/test/java/org/itstack/demo/design/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/design/LotteryResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/design/LotteryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/design/LotteryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/design/event/EventManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/design/event/listener/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/design/event/listener/MQEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/design/event/listener/MessageEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/designfj/LotteryResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/designfj/LotteryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/designfj/LotteryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/designfj/event/EventManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/designfj/event/listener/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/designfj/event/listener/MQEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/main/java/org/itstack/demo/designfj/event/listener/MessageEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-18-02/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_00.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/design/Singleton_07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/src/main/java/org/itstack/demo/design/mq/CreateAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/src/main/java/org/itstack/demo/design/mq/OrderMq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/src/main/java/org/itstack/demo/design/mq/POPOrderDelivered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/src/main/java/org/itstack/demo/design/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/src/main/java/org/itstack/demo/design/service/POPOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-01/src/main/java/org/itstack/demo/design/CreateAccountMqService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-01/src/main/java/org/itstack/demo/design/OrderMqService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-01/src/main/java/org/itstack/demo/design/POPOrderDeliveredService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-02/src/main/java/org/itstack/demo/design/MQAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-02/src/main/java/org/itstack/demo/design/OrderAdapterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-02/src/main/java/org/itstack/demo/design/RebateInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-02/src/main/java/org/itstack/demo/design/cuisine/impl/InsideOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-02/src/main/java/org/itstack/demo/design/cuisine/impl/POPOrderAdapterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-6-02/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itstack-demo-design-6-00/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itstack-demo-design-6-00/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +67,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -47,65 +86,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.ApiTest.test_CacheService (1).executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ApiTest.test_CacheService.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ApiTest.test_IMyUserDao.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ApiTest.test_IUserDao.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ApiTest.test_awardToUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ApiTest.test_commodity.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;E:/workspace-java/relearn-design-patterns/itstack-demo-design-1-02/src/main/java/org/itstack/demo/design&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/workspace-java/netty/itstack-demo-netty-xfg/itstack-demo-netty&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3632184&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ApiTest.test (1).executor": "Run",
+    "JUnit.ApiTest.test (2).executor": "Run",
+    "JUnit.ApiTest.test.executor": "Run",
+    "JUnit.ApiTest.test_CacheService (1).executor": "Debug",
+    "JUnit.ApiTest.test_CacheService.executor": "Run",
+    "JUnit.ApiTest.test_IMyUserDao.executor": "Run",
+    "JUnit.ApiTest.test_IUserDao.executor": "Debug",
+    "JUnit.ApiTest.test_MQAdapter.executor": "Run",
+    "JUnit.ApiTest.test_awardToUser.executor": "Run",
+    "JUnit.ApiTest.test_commodity.executor": "Run",
+    "JUnit.ApiTest.test_itAdapter.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "aspect.path.notification.shown": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "E:/workspace-java/relearn-design-patterns/itstack-demo-design-1-02/src/main/java/org/itstack/demo/design",
+    "last_opened_file_path": "E:/workspace-java/netty/itstack-demo-netty-xfg/itstack-demo-netty",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3632184",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.Singleton_06.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace-java\relearn-design-patterns\itstack-demo-design-2-00\src\main\java\org\itstack\demo\design\matter" />
       <recent name="E:\workspace-java\relearn-design-patterns\itstack-demo-log\src\main\resources" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.itstack.demo.design.cuisine.impl" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.itstack.demo.design" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.itstack.demo.design.event.listener" />
+      <recent name="org.itstack.demo.design" />
+      <recent name="org.itstack.demo.design.service" />
+      <recent name="org.itstack.demo.design.cuisine.impl" />
       <recent name="org.itstack.demo.design.card" />
-      <recent name="org.itstack.demo.design.goods" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_IMyUserDao">
-    <configuration name="ApiTest.test_CacheService (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itstack-demo-design-2-02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.itstack.demo.desgin.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.itstack.demo.desgin.test" />
-      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.desgin.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_CacheService" />
-      <option name="TEST_OBJECT" value="method" />
+  <component name="RunManager" selected="JUnit.ApiTest.test (2)">
+    <configuration name="Singleton_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.Singleton_06" />
+      <module name="itstack-demo-design-5-00" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_CacheService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itstack-demo-design-2-01" />
+    <configuration name="ApiTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-18-02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.itstack.demo.design.test.*" />
@@ -114,14 +154,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
       <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_CacheService" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_IMyUserDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itstack-demo-design-12-00" />
+    <configuration name="ApiTest.test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-5-00" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.itstack.demo.design.test.*" />
@@ -130,14 +170,30 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
       <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_IMyUserDao" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test_IUserDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itstack-demo-design-12-00" />
+    <configuration name="ApiTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-18-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstack.demo.design.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstack.demo.design" />
+      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.ApiTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_itAdapter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-6-02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.itstack.demo.design.test.*" />
@@ -146,23 +202,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
       <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_IUserDao" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_commodity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itstack-demo-design-1-02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.itstack.demo.design.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
-      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_commodity" />
+      <option name="METHOD_NAME" value="test_itAdapter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiTest.test_IMyUserDao" />
-        <item itemvalue="JUnit.ApiTest.test_IUserDao" />
-        <item itemvalue="JUnit.ApiTest.test_CacheService (1)" />
-        <item itemvalue="JUnit.ApiTest.test_CacheService" />
-        <item itemvalue="JUnit.ApiTest.test_commodity" />
+        <item itemvalue="JUnit.ApiTest.test (2)" />
+        <item itemvalue="应用程序.Singleton_06" />
+        <item itemvalue="JUnit.ApiTest.test (1)" />
+        <item itemvalue="JUnit.ApiTest.test" />
+        <item itemvalue="JUnit.ApiTest.test_itAdapter" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +237,9 @@
       <workItem from="1719542224428" duration="11253000" />
       <workItem from="1719802092941" duration="15304000" />
       <workItem from="1719975987749" duration="4000" />
-      <workItem from="1720084263877" duration="844000" />
+      <workItem from="1720084263877" duration="11517000" />
+      <workItem from="1720152855853" duration="3284000" />
+      <workItem from="1720405252567" duration="5952000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式：1.工厂方法">
       <option name="closed" value="true" />
@@ -215,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719559378764</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="设计模式：自实现抽象工厂模式">
+      <option name="closed" value="true" />
+      <created>1720085751902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720085751902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +274,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="设计模式：1.工厂方法" />
     <MESSAGE value="设计模式：1.抽象工厂模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式：1.抽象工厂模式" />
+    <MESSAGE value="设计模式：自实现抽象工厂模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计模式：自实现抽象工厂模式" />
   </component>
 </project>
