@@ -8,5 +8,6 @@ public class ApiTest {
     @Test
     public void test(){
         Singleton_07.INSTANCE.test();
+        org.itstack.demo.mydesign.Singleton_07.INSTANCE.test();
     }
 }
