@@ -20,5 +20,8 @@ public class ApiTest {
         String s2 = proxy_IIR.get("username");
         System.out.println("测试结果：" + s2);
 
+
+
+
     }
 }

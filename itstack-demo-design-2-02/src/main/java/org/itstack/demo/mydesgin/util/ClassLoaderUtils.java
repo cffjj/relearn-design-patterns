@@ -1,0 +1,179 @@
+package org.itstack.demo.mydesgin.util;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Modifier;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
+
+public class ClassLoaderUtils {
+
+    private static Set<Class> primitiveSet = new HashSet<>();
+
+    static {
+        primitiveSet.add(Integer.class);
+        primitiveSet.add(Long.class);
+        primitiveSet.add(Float.class);
+        primitiveSet.add(Byte.class);
+        primitiveSet.add(Short.class);
+        primitiveSet.add(Double.class);
+        primitiveSet.add(Character.class);
+        primitiveSet.add(Boolean.class);
+    }
+
+    /**
+     *
+     * 得到当前的ClassLoader
+     */
+    public static ClassLoader getCurrentClassLoader(){
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        if (classLoader == null){
+            classLoader = ClassLoaderUtils.class.getClassLoader();
+        }
+        return classLoader == null ? ClassLoader.getSystemClassLoader() : classLoader;
+    }
+
+    /**
+     * 得到当前ClassLoader
+     *
+     * @param clazz 某个类
+     * @return ClassLoader
+     */
+    public static ClassLoader getClassLoader(Class<?> clazz){
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        if (classLoader != null){
+            return classLoader;
+        }
+
+        if (clazz != null){
+            classLoader = clazz.getClassLoader();
+            if (classLoader != null){
+                return classLoader;
+            }
+            return clazz.getClassLoader();
+        }
+        return ClassLoader.getSystemClassLoader();
+    }
+
+    /**
+     * 根据类名加载Class
+     *
+     * @param className 类名
+     * @return Class
+     * @throws ClassNotFoundException 找不到类
+     */
+    public static Class forName(String className ) throws ClassNotFoundException {
+       return forName(className,true);
+    }
+
+    /**
+     * 根据类名加载Class
+     *
+     * @param className 类名
+     * @return Class
+     * @throws ClassNotFoundException 找不到类
+     */
+    public static Class forName(String className, boolean initialize) throws ClassNotFoundException {
+        return Class.forName(className,initialize,getCurrentClassLoader());
+    }
+
+    /**
+     * 根据类名加载Class
+     *
+     * @param className 类名
+     * @return Class
+     * @throws ClassNotFoundException 找不到类
+     */
+    public static Class forName(String className, ClassLoader classLoader) throws ClassNotFoundException {
+        return Class.forName(className,true,classLoader);
+    }
+
+    /**
+     * 实例化一个对象(只检测默认构造函数，其它不管）
+     *
+     * @param clazz 对象类
+     * @param <T>   对象具体类
+     * @return 对象实例
+     * @throws Exception 没有找到方法，或者无法处理，或者初始化方法异常等
+     */
+    public static <T> T neInstance(Class<T> clazz) throws Exception {
+        if (primitiveSet.contains(clazz)){
+            return null;
+        }
+        if (clazz.isMemberClass() && !Modifier.isStatic(clazz.getModifiers())){
+            Constructor<?>[] constructorList = clazz.getDeclaredConstructors();
+            Constructor<?> defaultConstructor = null;
+            for (Constructor<?> con : constructorList) {
+                if (con.getParameterTypes().length == 1 ){
+                    defaultConstructor = con;
+                    break;
+                }
+            }
+            if (defaultConstructor != null){
+                if (defaultConstructor.isAccessible()){
+                    return (T) defaultConstructor.newInstance(new Object[]{null});
+                }else {
+                    try {
+                        defaultConstructor.setAccessible(true);
+                        return (T) defaultConstructor.newInstance(new Object[]{null});
+                    }finally {
+                        defaultConstructor.setAccessible(false);
+                    }
+                }
+            }else {
+                throw new Exception("The " + clazz.getCanonicalName() + " has no default constructor!");
+            }
+        }
+
+        try {
+            return clazz.newInstance();
+        }catch (Exception e){
+            Constructor<T> declaredConstructor = clazz.getDeclaredConstructor();
+            if (declaredConstructor.isAccessible()){
+                throw new Exception("The " + clazz.getCanonicalName() + " has no default constructor!", e);
+            }else {
+                try {
+                    declaredConstructor.setAccessible(true);
+                    return declaredConstructor.newInstance();
+                }finally {
+                    declaredConstructor.setAccessible(false);
+                }
+            }
+        }
+
+    }
+
+
+
+    public static Class<?>[] getClazzByArgs(Object[] args){
+        Class<?>[] classes = new Class[args.length];
+
+        for (int i = 0; i < args.length; i++) {
+            if (args[i] instanceof ArrayList){
+                classes[i] = List.class;
+                continue;
+            }
+            if (args[i] instanceof LinkedList){
+                classes[i] = List.class;
+                continue;
+            }
+            if (args[i] instanceof HashMap){
+                classes[i] = Map.class;
+                continue;
+            }
+            if (args[i] instanceof Long){
+                classes[i] = long.class;
+                continue;
+            }
+            if (args[i] instanceof Double){
+                classes[i] = double.class;
+                continue;
+            }
+            if (args[i] instanceof TimeUnit){
+                classes[i] = TimeUnit.class;
+                continue;
+            }
+            classes[i] = args[i].getClass();
+        }
+        return classes;
+    }
+}
