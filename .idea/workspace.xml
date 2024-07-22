@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式自行实现：工厂方法、责任链">
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/mydesign/Singleton_00.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/mydesign/Singleton_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/mydesign/Singleton_02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/mydesign/Singleton_03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/mydesign/Singleton_04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/mydesign/Singleton_05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-5-00/src/main/java/org/itstack/demo/mydesign/Singleton_06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式自行实现：单例模式" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,19 +14,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="ApiTest.test_tree" />
-    </enabled-run-configurations>
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -224,7 +210,7 @@
       <workItem from="1721011283853" duration="446000" />
       <workItem from="1721100926828" duration="4389000" />
       <workItem from="1721292878035" duration="8996000" />
-      <workItem from="1721371769844" duration="4771000" />
+      <workItem from="1721371769844" duration="6350000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式：1.工厂方法">
       <option name="closed" value="true" />
@@ -274,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721373050756</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="设计模式自行实现：单例模式">
+      <option name="closed" value="true" />
+      <created>1721379120266</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721379120266</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +292,8 @@
     <MESSAGE value="设计模式：代理、单例、设配器、观察者" />
     <MESSAGE value="设计模式：责任链模式" />
     <MESSAGE value="设计模式自行实现：工厂方法、责任链" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式自行实现：工厂方法、责任链" />
+    <MESSAGE value="设计模式自行实现：单例模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计模式自行实现：单例模式" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
