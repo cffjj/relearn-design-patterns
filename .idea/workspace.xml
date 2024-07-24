@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式自行实现：组合模式">
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-00/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-00/src/main/java/org/itstack/demo/design/AnswerQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-00/src/main/java/org/itstack/demo/design/ChoiceQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-01/src/main/java/org/itstack/demo/design/QuestionBankController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-01/src/test/java/org/itstack/demo/desgin/test/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-02/src/main/java/org/itstack/demo/design/QuestionBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-02/src/main/java/org/itstack/demo/design/QuestionBankController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-02/src/main/java/org/itstack/demo/design/util/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-02/src/main/java/org/itstack/demo/design/util/TopicRandomUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-4-02/src/test/java/org/itstack/demo/desgin/test/ApiTest.java" afterDir="false" />
+    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式：原型模式">
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/NetMall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/DangDangNetMall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/JDNetMall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/TaoBaoNetMall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -64,6 +59,7 @@
     "JUnit.ApiTest.test_IMyUserDao.executor": "Run",
     "JUnit.ApiTest.test_IUserDao.executor": "Debug",
     "JUnit.ApiTest.test_MQAdapter.executor": "Run",
+    "JUnit.ApiTest.test_NetMall.executor": "Debug",
     "JUnit.ApiTest.test_QuestionBankController.executor": "Run",
     "JUnit.ApiTest.test_awardToUser.executor": "Run",
     "JUnit.ApiTest.test_commodity.executor": "Run",
@@ -79,7 +75,7 @@
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "E:/workspace-java/relearn-design-patterns/itstack-demo-design-1-02/src/main/java/org/itstack/demo/design",
-    "last_opened_file_path": "E:/workspace-java/netty/itstack-demo-netty-xfg/itstack-demo-netty",
+    "last_opened_file_path": "E:/workspace-java/dynamic-thread-pool/dynamic-thread-pool",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,20 +107,7 @@
       <recent name="org.itstack.demo.design.cuisine.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_questionBankController">
-    <configuration name="Singleton_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.mydesign.Singleton_06" />
-      <module name="itstack-demo-design-5-00" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.itstack.demo.mydesign.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ApiTest.test_NetMall">
     <configuration name="TopicRandomUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.util.TopicRandomUtil" />
       <module name="itstack-demo-design-4-02" />
@@ -149,6 +132,22 @@
       <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
       <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_NetMall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-21-00" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.itstack.demo.design.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
+      <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_NetMall" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_NetMall" />
         <item itemvalue="JUnit.ApiTest.test_questionBankController" />
         <item itemvalue="应用程序.TopicRandomUtil" />
         <item itemvalue="JUnit.ApiTest.test_QuestionBankController" />
         <item itemvalue="JUnit.ApiTest.test" />
-        <item itemvalue="应用程序.Singleton_06" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +229,8 @@
       <workItem from="1721100926828" duration="4389000" />
       <workItem from="1721292878035" duration="8996000" />
       <workItem from="1721371769844" duration="6350000" />
-      <workItem from="1721615486267" duration="19265000" />
+      <workItem from="1721615486267" duration="20569000" />
+      <workItem from="1721791100170" duration="5571000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式：1.工厂方法">
       <option name="closed" value="true" />
@@ -296,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721634018624</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="设计模式：原型模式">
+      <option name="closed" value="true" />
+      <created>1721718903770</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721718903770</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,9 +330,19 @@
     <MESSAGE value="设计模式自行实现：工厂方法、责任链" />
     <MESSAGE value="设计模式自行实现：单例模式" />
     <MESSAGE value="设计模式自行实现：组合模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式自行实现：组合模式" />
+    <MESSAGE value="设计模式：原型模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计模式：原型模式" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/JDNetMall.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.itstack.demo.design.domain.model.aggregates.TreeRich" memberName="treeRoot" />
