@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式：原型模式">
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/HttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/NetMall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/DangDangNetMall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/JDNetMall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/TaoBaoNetMall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itstack-demo-design-21-00/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
+    <list default="true" id="6dc022d0-068d-4730-9356-afaf428e5825" name="更改" comment="设计模式：模板模式">
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-01/src/main/java/org/itstack/demo/design/CouponDiscountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/src/main/java/org/itstack/demo/design/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/src/main/java/org/itstack/demo/design/ICouponDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/src/main/java/org/itstack/demo/design/impl/MJCouponDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/src/main/java/org/itstack/demo/design/impl/NYGCouponDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/src/main/java/org/itstack/demo/design/impl/ZJCouponDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/src/main/java/org/itstack/demo/design/impl/ZKCouponDiscount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itstack-demo-design-20-02/src/test/java/org/itstack/demo/design/test/ApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -48,6 +51,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ApiTest.executor": "Run",
     "JUnit.ApiTest.test (1).executor": "Run",
     "JUnit.ApiTest.test (2).executor": "Run",
     "JUnit.ApiTest.test.executor": "Run",
@@ -107,7 +111,7 @@
       <recent name="org.itstack.demo.design.cuisine.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_NetMall">
+  <component name="RunManager" selected="JUnit.ApiTest">
     <configuration name="TopicRandomUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.util.TopicRandomUtil" />
       <module name="itstack-demo-design-4-02" />
@@ -121,8 +125,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="itstack-demo-design-5-00" />
+    <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="itstack-demo-design-20-02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.itstack.demo.design.test.*" />
@@ -131,8 +135,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.itstack.demo.design.test" />
       <option name="MAIN_CLASS_NAME" value="org.itstack.demo.design.test.ApiTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest" />
         <item itemvalue="JUnit.ApiTest.test_NetMall" />
         <item itemvalue="JUnit.ApiTest.test_questionBankController" />
         <item itemvalue="应用程序.TopicRandomUtil" />
         <item itemvalue="JUnit.ApiTest.test_QuestionBankController" />
-        <item itemvalue="JUnit.ApiTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +233,7 @@
       <workItem from="1721292878035" duration="8996000" />
       <workItem from="1721371769844" duration="6350000" />
       <workItem from="1721615486267" duration="20569000" />
-      <workItem from="1721791100170" duration="5571000" />
+      <workItem from="1721791100170" duration="12843000" />
     </task>
     <task id="LOCAL-00001" summary="设计模式：1.工厂方法">
       <option name="closed" value="true" />
@@ -304,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721718903770</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="设计模式：模板模式">
+      <option name="closed" value="true" />
+      <created>1721803135484</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721803135484</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,18 +342,10 @@
     <MESSAGE value="设计模式自行实现：单例模式" />
     <MESSAGE value="设计模式自行实现：组合模式" />
     <MESSAGE value="设计模式：原型模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式：原型模式" />
+    <MESSAGE value="设计模式：模板模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计模式：模板模式" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/itstack-demo-design-21-00/src/main/java/org/itstack/demo/design/impl/JDNetMall.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.itstack.demo.design.domain.model.aggregates.TreeRich" memberName="treeRoot" />
