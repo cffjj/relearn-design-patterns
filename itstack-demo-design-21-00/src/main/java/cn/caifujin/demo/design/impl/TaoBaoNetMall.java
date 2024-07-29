@@ -1,8 +1,8 @@
-package org.itstack.demo.design.impl;
+package cn.caifujin.demo.design.impl;
 
+import cn.caifujin.demo.design.HttpClient;
+import cn.caifujin.demo.design.NetMall;
 import com.alibaba.fastjson.JSON;
-import org.itstack.demo.design.HttpClient;
-import org.itstack.demo.design.NetMall;
 import sun.misc.BASE64Encoder;
 
 import java.util.Map;
@@ -10,14 +10,14 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DangDangNetMall extends NetMall {
-    public DangDangNetMall(String uId, String password) {
+public class TaoBaoNetMall extends NetMall {
+    public TaoBaoNetMall(String uId, String password) {
         super(uId, password);
     }
 
     @Override
     protected boolean login(String uId, String password) {
-        logger.info("模拟当当用户登录 uId:{} password：{}",uId,password);
+        logger.info("模拟淘宝用户登录：{} {}",uId,password);
         return true;
     }
 
@@ -30,15 +30,15 @@ public class DangDangNetMall extends NetMall {
         if (m9.find()){
             map.put("name",m9.group());
         }
-        map.put("price","4548.00");
-        logger.info("模拟当当商品爬虫解析：{} | {} 元 {}", map.get("name"), map.get("price"), skuUrl);
+        map.put("price","324.54");
+        logger.info("模拟淘宝商品爬虫解析：{} | {} 元 {}",map.get("name"),map.get("price"),skuUrl);
         return map;
     }
 
     @Override
     protected String createBase64(Map<String, String> goodsInfo) {
         BASE64Encoder encoder = new BASE64Encoder();
-        logger.info("模拟生成当当商品base64海报");
+        logger.info("模拟淘宝生成商品base64海报");
         return encoder.encode(JSON.toJSONString(goodsInfo).getBytes());
     }
 }

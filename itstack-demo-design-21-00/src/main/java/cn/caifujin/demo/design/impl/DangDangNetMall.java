@@ -1,8 +1,8 @@
-package org.itstack.demo.design.impl;
+package cn.caifujin.demo.design.impl;
 
+import cn.caifujin.demo.design.HttpClient;
+import cn.caifujin.demo.design.NetMall;
 import com.alibaba.fastjson.JSON;
-import org.itstack.demo.design.HttpClient;
-import org.itstack.demo.design.NetMall;
 import sun.misc.BASE64Encoder;
 
 import java.util.Map;
@@ -17,7 +17,7 @@ public class DangDangNetMall extends NetMall {
 
     @Override
     protected boolean login(String uId, String password) {
-        logger.info("模拟当当用户登录 uId:{} password：{}",uId,password);
+        logger.info("模拟当当用户登录 uId:{} password：{}", uId, password);
         return true;
     }
 
