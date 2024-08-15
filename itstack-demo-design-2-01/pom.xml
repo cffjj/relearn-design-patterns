@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>itstack-demo-design-2-01</artifactId>
+    <description>抽象工厂</description>
 
     <dependencies>
         <dependency>
