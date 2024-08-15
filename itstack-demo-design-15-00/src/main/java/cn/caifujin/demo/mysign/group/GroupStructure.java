@@ -1,7 +1,7 @@
-package cn.caifujin.demo.design.group;
+package cn.caifujin.demo.mysign.group;
 
-import cn.caifujin.demo.design.lang.Collection;
-import cn.caifujin.demo.design.lang.Iterator;
+import cn.caifujin.demo.mysign.lang.Collection;
+import cn.caifujin.demo.mysign.lang.Iterator;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -9,17 +9,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class GroupStructure implements Collection<Employee, Link> {
+public class GroupStructure implements Collection<Employee,Link> {
 
     private String groupId;
 
     private String groupName;
 
-    Map<String, Employee> employeeMap = new ConcurrentHashMap<>(); //雇佣列表
+    Map<String,Employee> employeeMap = new ConcurrentHashMap<>();
 
-    Map<String, List<Link>> linkMap = new ConcurrentHashMap<>(); //组织架构关系
+    Map<String, List<Link>> linkMap = new ConcurrentHashMap<>();
 
-    private Map<String,String> invertedMap = new ConcurrentHashMap<>(); //反向关系链
+    private Map<String,String> invertedMap = new ConcurrentHashMap<>();
 
     public GroupStructure(String groupId, String groupName) {
         this.groupId = groupId;
@@ -41,7 +41,7 @@ public class GroupStructure implements Collection<Employee, Link> {
         invertedMap.put(link.getToId(),link.getFromId());
         if (linkMap.containsKey(key)){
             return linkMap.get(key).add(link);
-        } else {
+        }else {
             List<Link> links = new LinkedList<>();
             links.add(link);
             linkMap.put(key,links);
@@ -57,6 +57,7 @@ public class GroupStructure implements Collection<Employee, Link> {
     @Override
     public Iterator<Employee> iterator() {
         return new Iterator<Employee>() {
+
             HashMap<String,Integer> keyMap = new HashMap<>();
             int totalIdx = 0;
 
@@ -73,13 +74,12 @@ public class GroupStructure implements Collection<Employee, Link> {
                 List<Link> links = linkMap.get(toId);
                 int cursorIdx = getCursorIdx(toId);
 
-                //同级节点扫描
-                if (null == links){
+                if (null == links) {
                     cursorIdx = getCursorIdx(fromId);
                     links = linkMap.get(fromId);
                 }
 
-                while (cursorIdx > links.size() - 1){
+                while (cursorIdx > links.size() - 1) {
                     fromId = invertedMap.get(fromId);
                     cursorIdx = getCursorIdx(fromId);
                     links = linkMap.get(fromId);
@@ -91,7 +91,7 @@ public class GroupStructure implements Collection<Employee, Link> {
                 return employeeMap.get(link.getToId());
             }
 
-            public int getCursorIdx(String key){
+            public int getCursorIdx(String key) {
                 int idx = 0;
                 if (keyMap.containsKey(key)){
                     idx = keyMap.get(key);
@@ -103,5 +103,4 @@ public class GroupStructure implements Collection<Employee, Link> {
             }
         };
     }
-
 }

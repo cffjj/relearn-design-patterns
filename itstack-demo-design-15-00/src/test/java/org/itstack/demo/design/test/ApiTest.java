@@ -1,9 +1,10 @@
 package org.itstack.demo.design.test;
 
-import org.itstack.demo.design.group.Employee;
-import org.itstack.demo.design.group.GroupStructure;
-import org.itstack.demo.design.group.Link;
-import org.itstack.demo.design.lang.Iterator;
+
+import cn.caifujin.demo.mysign.group.Employee;
+import cn.caifujin.demo.mysign.group.GroupStructure;
+import cn.caifujin.demo.mysign.group.Link;
+import cn.caifujin.demo.mysign.lang.Iterator;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,9 +30,9 @@ public class ApiTest {
         groupStructure.addLink("2",new Link("2","4"));
         groupStructure.addLink("2",new Link("2","5"));
 
-        groupStructure.addLink("5",new Link("5","6"));
-        groupStructure.addLink("5",new Link("5","7"));
-        groupStructure.addLink("5",new Link("5","8"));
+        groupStructure.addLink("3",new Link("3","6"));
+        groupStructure.addLink("3",new Link("3","7"));
+        groupStructure.addLink("3",new Link("3","8"));
 
         Iterator<Employee> iterator = groupStructure.iterator();
         while (iterator.hasNext()){
