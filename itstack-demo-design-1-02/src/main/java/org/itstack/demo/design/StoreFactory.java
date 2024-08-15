@@ -1,6 +1,5 @@
 package org.itstack.demo.design;
 
-import org.itstack.demo.design.card.IQiYiCardService;
 import org.itstack.demo.design.store.ICommodity;
 import org.itstack.demo.design.store.impl.CardCommodityService;
 import org.itstack.demo.design.store.impl.CouponCommodityService;
